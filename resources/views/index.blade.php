@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studio2I</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="{{ asset('css/styles.css') }}"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" />
-  <link rel="stylesheet" href="styles/Font-Awesome-6/css/all.css" />
+  <link rel="stylesheet" href="{{ asset('css/Font-Awesome-6/css/all.css') }}" />
 </head>
 
 <body>
   <header class="header">
-    <img class="header__logo" src="images/logo.svg" alt="Агентство 2И" />
+    <img class="header__logo" src="{{ asset('images/logo.svg') }}" alt="Агентство 2И" />
     <div class="header__menu">
       <div class="header__menu__element">
         <a class="header__menu__element__link" href="/">Услуги</a>
