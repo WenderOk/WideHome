@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Studio2I</title>
-  <link rel="stylesheet" href="{{ asset('css/styles.css') }}"/>
+  <link rel="stylesheet" href="{{ asset('css/reset.css') }}"/>
+  <link rel="shortcut icon" type="image/svg" src="{{ asset('favicon.ico') }}"/>
+  @vite('resources/scss/app.scss')
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" />
   <link rel="stylesheet" href="{{ asset('css/Font-Awesome-6/css/all.css') }}" />
 </head>
-
 <body>
   <header class="header">
-    <img class="header__logo" src="{{ asset('images/logo.svg') }}" alt="Агентство 2И" />
-    <div class="header__menu">
-      <div class="header__menu__element">
-        <a class="header__menu__element__link" href="/">Услуги</a>
+    <div class="header__logo" ><img src="{{ asset('images/logo.svg') }}" alt="Агентство 2И" /></div>
+    <nav class="header__menu">
+      <div class="header__menu-element">
+        <a class="header__menu-link" href="/">Услуги</a>
       </div>
-      <div class="header__menu__element">
-        <a class="header__menu__element__link" href="/">Портфолио</a>
+      <div class="header__menu-element">
+        <a class="header__menu-link" href="/">Портфолио</a>
       </div>
-      <div class="header__menu__element">
-        <a class="header__menu__element__link" href="#contacts">Контакты</a>
+      <div class="header__menu-element">
+        <a class="header__menu-link" href="#contacts">Контакты</a>
       </div>
-      <div class="header__menu__button">
+      <a class="header__button" href="tel:+79310093772>">
         <div class="icon"><i class="fas fa-mobile-screen-button"></i></div>
-        <a class="header__menu__button__text" href="tel:+79310093772">+7 931 009-37-72</a>
-      </div>
-    </div>
+        +7 931 009-37-72
+      </a>
+    </nav>
   </header>
 
-  <div class="content">
-    <p class="content__heading">
+  <div class="cover">
+    <p class="cover__heading">
       Разработка веб-сервисов<br />
       и сайтов с 2013 года
     </p>
-    <a href="tel:+79310093772" class="content__button">
+    <a href="tel:+79310093772" class="cover__button">
       <i class="fas fa-mobile-screen-button fa-fw"></i>
       +7 931 009-37-72
     </a>
@@ -44,7 +44,7 @@
   <footer class="footer">
     <div id="contacts" class="footer__contacts">
       <div class="footer__contacts__group">
-        <div class="footer__contacts__group__heading">ОТДЕЛ ПРОДАЖ</div>
+        <div class="footer__contacts-heading">ОТДЕЛ ПРОДАЖ</div>
         <div class="footer__contacts__group__contacts">
           <div class="footer__contacts__group__contacts__phone">
             <a class="footer__contacts__group__contacts__phone__text" href="tel:+79310093772">+7 931 009-37-72</a>
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="footer__contacts__group">
-        <div class="footer__contacts__group__heading">СЕРВИСНЫЙ ОТДЕЛ</div>
+        <div class="footer__contacts-heading">СЕРВИСНЫЙ ОТДЕЛ</div>
         <div class="footer__contacts__group__contacts">
           <div class="footer__contacts__group__contacts__phone">
             <a class="footer__contacts__group__contacts__phone__text" href="tel:+79310093772">+7 931 009-37-74</a>
