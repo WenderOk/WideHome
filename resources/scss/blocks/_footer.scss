@@ -1,0 +1,103 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-dark);
+
+
+    &__contacts {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-self: stretch;
+        padding: 240px 320px;
+        gap: 56px;
+        border-bottom: 1px solid var(--color-gray);
+
+        &-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &-heading {
+                font-weight: 100;
+                letter-spacing: 0.08em;
+                color: var(--color-light);
+            }
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        &-phone {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            color: var(--color-light);
+        }
+
+        &-social {
+            display: flex;
+            gap: 24px;
+
+
+            &-link {
+                display: flex;
+                font-weight: 600;
+                align-items: center;
+                gap: 8px;
+                color: var(--color-light);
+            }
+        }
+
+        &-mailAndTime {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            gap: 8px;
+
+            &-mail {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                color: var(--color-light);
+                font-weight: 600;
+            }
+
+            &-time {
+                display: flex;
+                font-weight: 300;
+                color: var(--color-light);
+            }
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 320px;
+
+        &-text {
+            margin-right: 127px;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 16px;
+            color: var(--color-light);
+        }
+    }
+}
+
+.footer__contacts-mailAndTime-mail:hover {
+    color: var(--color-accent);
+}
+
+.footer__contacts-social-link:hover {
+    color: var(--color-accent);
+}
+
+.footer__contacts-phone:hover {
+    color: var(--color-accent);
+}

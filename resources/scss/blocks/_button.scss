@@ -7,22 +7,26 @@
     transition: var(--transition-duration) linear;
 
     &--transparent {
+        box-sizing: border-box;
         padding: 12px 24px;
-        border: 1px solid var(--color-gray);    
+        border: 1px solid var(--color-gray);
+        font-weight: 600;
     }
 
     &--blue {
         box-sizing: border-box;
         padding: 16px 32px;
-        background-color: #0044ff;
+        background-color: var(--color-accent);
         color: var(--color-light);
+        font-weight: 600;
     }
 }
+
 .button--transparent:hover {
-    color: #0044FF;
-    border-color: #0044FF;
+    color: var(--color-accent);
+    border-color: var(--color-accent);
 }
 
 .button--blue:hover {
-    background-color: #95b2ff;
-  }
+    background-color: var(--color-accent-light);
+}

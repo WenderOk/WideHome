@@ -1,4 +1,4 @@
-@mixin font-large {
+@font-face {
     font-family: "Geologica";
     src: url(https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap);
     font-weight: 600;
@@ -6,24 +6,10 @@
     font-display: swap;
 }
 
-.font {
+.text {
     font-style: normal;
     color: var(--color-gray);
     font-size: 16px;
+    line-height: 24px;
     transition: var(--transition-duration) linear;
-}
-
-.font--bold {
-    @extend .font;
-    font-weight: 600;
-}
-
-.font--medium {
-    @extend .font;
-    font-weight: 300;
-}
-
-.font--thin {
-    @extend .font;
-    font-weight: 100;
 }
