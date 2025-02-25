@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Studio2I</title>
-  <link rel="stylesheet" href="{{ asset('css/reset.css') }}"/>
-  <link rel="shortcut icon" type="image/svg" src="{{ asset('favicon.ico') }}"/>
+  <link rel="shortcut icon" type="image/svg" src="{{ asset('images/logo.svg') }}"/>
   @vite('resources/scss/app.scss')
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" />
   <link rel="stylesheet" href="{{ asset('css/Font-Awesome-6/css/all.css') }}" />
@@ -15,15 +14,15 @@
     <div class="header__logo" ><img src="{{ asset('images/logo.svg') }}" alt="Агентство 2И" /></div>
     <nav class="header__menu">
       <div class="header__menu-element">
-        <a class="header__menu-link" href="/">Услуги</a>
+        <a class="header__menu-link font--bold" href="/">Услуги</a>
       </div>
       <div class="header__menu-element">
-        <a class="header__menu-link" href="/">Портфолио</a>
+        <a class="header__menu-link font--bold" href="/">Портфолио</a>
       </div>
       <div class="header__menu-element">
-        <a class="header__menu-link" href="#contacts">Контакты</a>
+        <a class="header__menu-link font--bold" href="#contacts">Контакты</a>
       </div>
-      <a class="header__button" href="tel:+79310093772>">
+      <a class="button button--transparent font--bold" href="tel:+79310093772>">
         <div class="icon"><i class="fas fa-mobile-screen-button"></i></div>
         +7 931 009-37-72
       </a>
@@ -35,7 +34,7 @@
       Разработка веб-сервисов<br />
       и сайтов с 2013 года
     </p>
-    <a href="tel:+79310093772" class="cover__button">
+    <a href="tel:+79310093772" class="font--bold button button--blue">
       <i class="fas fa-mobile-screen-button fa-fw"></i>
       +7 931 009-37-72
     </a>

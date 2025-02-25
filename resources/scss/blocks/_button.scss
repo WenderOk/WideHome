@@ -1,0 +1,28 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    gap: 4px;
+    transition: var(--transition-duration) linear;
+
+    &--transparent {
+        padding: 12px 24px;
+        border: 1px solid var(--color-gray);    
+    }
+
+    &--blue {
+        box-sizing: border-box;
+        padding: 16px 32px;
+        background-color: #0044ff;
+        color: var(--color-light);
+    }
+}
+.button--transparent:hover {
+    color: #0044FF;
+    border-color: #0044FF;
+}
+
+.button--blue:hover {
+    background-color: #95b2ff;
+  }

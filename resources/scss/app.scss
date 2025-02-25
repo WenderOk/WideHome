@@ -1,94 +1,11 @@
+@use "reset";
+@use "mixins";
 @use "variables";
 @use "fonts";
 
+@use "blocks/button";
 @use "blocks/header";
-
-
-  
-//   .header {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 24px 320px;
-//     gap: 32px;
-//     position: sticky;
-//     width: 1280px;
-//     height: 112px;
-//     left: 0px;
-//     top: 0px;
-//     background: #ffffff;
-//     z-index: 100;
-//   }
-  
-//   .header__logo {
-//     width: 64px;
-//     height: 64px;
-//   }
-  
-//   .header__menu {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-end;
-//     align-items: center;
-//     padding: 0px;
-//     gap: 40px;
-//     width: 1184px;
-//     height: 48px;
-//     flex-grow: 1;
-//   }
-  
-//   .header__menu-element {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     padding: 0px;
-//     gap: 4px;
-//     width: auto;
-//     height: 24px;
-//   }
-  
-//   .header__text-link {
-//     width: auto;
-//     height: 24px;
-//     text-decoration: none;
-//     font-style: normal;
-//     font-weight: 600;
-//     font-size: 16px;
-//     line-height: 24px;
-//     font-feature-settings: "ss01" on;
-//     color: #222222;
-//     transition: 0.15s linear;
-//   }
-  
-//   .header__menu-button {
-//     box-sizing: border-box;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 12px 24px;
-//     gap: 4px;
-//     width: 209px;
-//     height: 48px;
-//     border: 1px solid #222222;
-//     border-radius: 32px;
-//     color: #222222;
-//     transition: 0.15s linear;
-//   }
-  
-//   .header__menu__button-text {
-//     text-decoration: none;
-//     width: 140px;
-//     height: 24px;
-//     font-style: normal;
-//     font-weight: 600;
-//     font-size: 16px;
-//     line-height: 24px;
-//     display: flex;
-//     align-items: center;
-//     color: inherit;
-//   }
+@use "blocks/cover";
   
   .icon {
     display: flex;
@@ -99,47 +16,7 @@
     color: inherit;
   }
   
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 240px 320px;
-    padding-top: 140px;
-    gap: 32px;
-    width: 1280px;
-    height: 57%;
-    align-self: stretch;
-    z-index: 1;
-  }
-  
-  .content__heading {
-    width: 1280px;
-    height: 160px;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 80px;
-    color: #222222;
-    align-self: stretch;
-    margin: 0;
-  }
-  
-  .content__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 32px;
-    gap: 4px;
-    background: #0044ff;
-    border-radius: 32px;
-    transition: 0.15s linear;
-    color: #fff;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-  }
+
   
   .footer {
     display: flex;
@@ -348,8 +225,4 @@
   
   .footer__contacts__group__contacts__phone:hover {
     color: #0044FF;
-  }
-  
-  .content__button:hover {
-    background-color: #95b2ff;
   }
