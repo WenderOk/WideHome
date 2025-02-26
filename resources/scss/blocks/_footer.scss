@@ -4,7 +4,7 @@
     background: var(--color-dark);
 
 
-    &__contacts {
+    .contacts {
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
@@ -13,7 +13,7 @@
         gap: 56px;
         border-bottom: 1px solid var(--color-gray);
 
-        &-group {
+        &__group {
             display: flex;
             flex-direction: column;
             gap: 16px;
@@ -25,20 +25,20 @@
             }
         }
 
-        &-content {
+        &__content {
             display: flex;
             flex-direction: column;
             gap: 8px;
         }
 
-        &-phone {
+        &__phone {
             font-weight: 600;
             font-size: 32px;
             line-height: 40px;
             color: var(--color-light);
         }
 
-        &-social {
+        &__social {
             display: flex;
             gap: 24px;
 
@@ -52,7 +52,7 @@
             }
         }
 
-        &-mailAndTime {
+        &__mailAndTime {
             display: flex;
             flex-direction: column;
             justify-content: end;
@@ -90,14 +90,14 @@
     }
 }
 
-.footer__contacts-mailAndTime-mail:hover {
+.contacts__mailAndTime-mail:hover {
     color: var(--color-accent);
 }
 
-.footer__contacts-social-link:hover {
+.contacts__social-link:hover {
     color: var(--color-accent);
 }
 
-.footer__contacts-phone:hover {
+.contacts__phone:hover {
     color: var(--color-accent);
 }

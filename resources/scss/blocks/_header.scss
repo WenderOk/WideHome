@@ -15,18 +15,17 @@
         display: flex;
         align-items: center;
         gap: 40px;
-    }
 
-    &__menu-element {
-        display: flex;
-        align-items: center;
-        padding: 0px;
-        gap: 4px;
-        width: auto;
-        height: 24px;
+        &-element {
+            display: flex;
+        }
+
+        &-link {
+            font-weight: 600;
+        }
     }
 }
 
 .header__menu-link:hover {
-    color: #0044FF;
+    color: var(--color-accent);
 }
