@@ -16,15 +16,15 @@
     <div class="header__logo"><img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="Агентство 2И" /></div>
     <nav class="header__menu">
       <div class="header__menu-element">
-        <a class="text header__menu-link" href="/">Услуги</a>
+        <a class="header__menu-link" href="/">Услуги</a>
       </div>
       <div class="header__menu-element">
-        <a class="text header__menu-link" href="/">Портфолио</a>
+        <a class="header__menu-link" href="/">Портфолио</a>
       </div>
       <div class="header__menu-element">
-        <a class="text header__menu-link" href="#contacts">Контакты</a>
+        <a class="header__menu-link" href="#contacts">Контакты</a>
       </div>
-      <a class="text button button--transparent" href="tel:+79310093772>">
+      <a class="button button_transparent" href="tel:+79310093772>">
         <div class="icon"><i class="fas fa-mobile-screen-button"></i></div>
         +7 931 009-37-72
       </a>
@@ -32,11 +32,11 @@
   </header>
 
   <div class="cover">
-    <p class="text cover__heading">
+    <p class="cover__heading">
       Разработка веб-сервисов<br />
       и сайтов с 2013 года
     </p>
-    <a href="tel:+79310093772" class="text button button--blue">
+    <a href="tel:+79310093772" class="button button_blue">
       <i class="fas fa-mobile-screen-button fa-fw"></i>
       +7 931 009-37-72
     </a>
@@ -45,36 +45,36 @@
   <footer class="footer">
     <div id="contacts" class="contacts">
       <div class="contacts__group">
-        <p class="text contacts__group-heading">ОТДЕЛ ПРОДАЖ</p>
+        <p class="contacts__group-heading">ОТДЕЛ ПРОДАЖ</p>
         <div class="contacts__content">
-          <a class="text contacts__phone" href="tel:+79310093772">+7 931 009-37-72</a>
+          <a class="contacts__phone" href="tel:+79310093772">+7 931 009-37-72</a>
           <div class="contacts__social">
-            <a class="text contacts__social-link" href="/"><i class="fa-solid fa-paper-plane"></i>Telegram</a>
-            <a class="text contacts__social-link" href="/"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+            <a class="contacts__social-link" href="/"><i class="fa-solid fa-paper-plane"></i>Telegram</a>
+            <a class="contacts__social-link" href="/"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
           </div>
         </div>
       </div>
       <div class="contacts__group">
-        <p class="text contacts__group-heading">СЕРВИСНЫЙ ОТДЕЛ</p>
+        <p class="contacts__group-heading">СЕРВИСНЫЙ ОТДЕЛ</p>
         <div class="contacts__content">
-          <a class="text contacts__phone" href="tel:+79310093772">+7 931 009-37-74</a>
+          <a class="contacts__phone" href="tel:+79310093772">+7 931 009-37-74</a>
           <div class="contacts__social">
-            <a class="text contacts__social-link" href="/"><i class="fa-solid fa-paper-plane"></i>Telegram</a>
-            <a class="text contacts__social-link" href="/"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+            <a class="contacts__social-link" href="/"><i class="fa-solid fa-paper-plane"></i>Telegram</a>
+            <a class="contacts__social-link" href="/"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
           </div>
         </div>
       </div>
-      <div class="contacts__mailAndTime">
-        <a class="text contacts__mailAndTime-mail" href="mailto:mail@studio2i.ru">mail@studio2i.ru</a>
-        <p class="text contacts__mailAndTime-time">
+      <div class="contacts__mail-and-time">
+        <a class="contacts__mail" href="mailto:mail@studio2i.ru">mail@studio2i.ru</a>
+        <p class="contacts__time">
           По будням с 10:00 до 19:00 (по Москве)
         </p>
       </div>
     </div>
 
     <div class="footer__copyright">
-      <p class="text footer__copyright-text">© 2013–2025 Диджитал-агентство 2И</p>
-      <p class="text footer__copyright-text">
+      <p class="footer__copyright-text">© 2013–2025 Диджитал-агентство 2И</p>
+      <p class="footer__copyright-text">
         ИП Артамонов Иван Сергеевич<br />ОГРНИП 316470400116880
       </p>
     </div>

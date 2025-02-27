@@ -5,15 +5,16 @@
     border-radius: 32px;
     gap: 4px;
     transition: var(--transition-duration) linear;
+    color: var(--color-gray);
 
-    &--transparent {
+    &_transparent {
         box-sizing: border-box;
         padding: 12px 24px;
         border: 1px solid var(--color-gray);
         font-weight: 600;
     }
 
-    &--blue {
+    &_blue {
         box-sizing: border-box;
         padding: 16px 32px;
         background-color: var(--color-accent);
@@ -22,11 +23,11 @@
     }
 }
 
-.button--transparent:hover {
+.button_transparent:hover {
     color: var(--color-accent);
     border-color: var(--color-accent);
 }
 
-.button--blue:hover {
+.button_blue:hover {
     background-color: var(--color-accent-light);
 }

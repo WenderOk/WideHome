@@ -1,4 +1,6 @@
+@use "../mixins";
 .header {
+    @include mixins.display();
     display: flex;
     justify-content: space-between;
     top: 0;
@@ -22,6 +24,7 @@
 
         &-link {
             font-weight: 600;
+            color: var(--color-gray);
         }
     }
 }

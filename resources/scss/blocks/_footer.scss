@@ -52,25 +52,25 @@
             }
         }
 
-        &__mailAndTime {
+        &__mail-and-time {
             display: flex;
             flex-direction: column;
             justify-content: end;
             gap: 8px;
+        }
 
-            &-mail {
-                display: flex;
-                align-items: center;
-                gap: 4px;
-                color: var(--color-light);
-                font-weight: 600;
-            }
+        &__mail {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--color-light);
+            font-weight: 600;
+        }
 
-            &-time {
-                display: flex;
-                font-weight: 300;
-                color: var(--color-light);
-            }
+        &__time {
+            display: flex;
+            font-weight: 300;
+            color: var(--color-light);
         }
     }
 
@@ -90,7 +90,7 @@
     }
 }
 
-.contacts__mailAndTime-mail:hover {
+.contacts__mail:hover {
     color: var(--color-accent);
 }
 

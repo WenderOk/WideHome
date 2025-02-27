@@ -14,7 +14,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	padding: 0;
 	border: 0;
 	outline: 0;
-	font-size: 100%;
+	font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
 	vertical-align: baseline;
 	background: transparent;
     text-decoration: none;
@@ -23,9 +25,10 @@ body {
     font-family: var(--font-family-base);
     display: flex;
     flex-direction: column;
-    // isolation: isolate;
-    // position: relative;
+    isolation: isolate;
+    position: relative;
     background: var(--color-light);
+	color: var(--color-gray);
   }
 ol, ul {
 	list-style: none;
