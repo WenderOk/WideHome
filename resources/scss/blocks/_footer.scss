@@ -9,14 +9,14 @@
         display: flex;
         justify-content: space-between;
         align-self: stretch;
-        padding: 240px 320px;
-        gap: 56px;
-        border-bottom: 1px solid var(--color-gray);
+        padding: 240rem 320rem;
+        gap: 56rem;
+        border-bottom: 1rem solid var(--color-gray);
 
         &__group {
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 16rem;
 
             &-heading {
                 font-weight: 100;
@@ -28,26 +28,26 @@
         &__content {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 8rem;
         }
 
         &__phone {
             font-weight: 600;
-            font-size: 32px;
-            line-height: 40px;
+            font-size: 32rem;
+            line-height: 40rem;
             color: var(--color-light);
         }
 
         &__social {
             display: flex;
-            gap: 24px;
+            gap: 24rem;
 
 
             &-link {
                 display: flex;
                 font-weight: 600;
                 align-items: center;
-                gap: 8px;
+                gap: 8rem;
                 color: var(--color-light);
             }
         }
@@ -56,13 +56,13 @@
             display: flex;
             flex-direction: column;
             justify-content: end;
-            gap: 8px;
+            gap: 8rem;
         }
 
         &__mail {
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 4rem;
             color: var(--color-light);
             font-weight: 600;
         }
@@ -78,13 +78,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 24px 320px;
+        padding: 24rem 320rem;
 
         &-text {
-            margin-right: 127px;
+            margin-right: 127rem;
             font-weight: 300;
-            font-size: 12px;
-            line-height: 16px;
+            font-size: 12rem;
+            line-height: 16rem;
             color: var(--color-light);
         }
     }

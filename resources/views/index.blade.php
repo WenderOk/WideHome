@@ -13,7 +13,7 @@
 
 <body>
   <header class="header">
-    <div class="header__logo"><img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="Агентство 2И" /></div>
+    <div class="header__logo"><img class="header__logo" src="{{ Vite::asset('resources/images/logo.svg') }}" alt="Агентство 2И" /></div>
     <nav class="header__menu">
       <div class="header__menu-element">
         <a class="header__menu-link" href="/">Услуги</a>
