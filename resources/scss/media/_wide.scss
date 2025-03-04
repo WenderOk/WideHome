@@ -1,0 +1,12 @@
+@use "sass:math";
+@media (min-width: 1024px) {
+    html {
+        font-size: calc(1vw / 19.2);
+    }
+    .menu__button {
+        display: none;
+    }
+    .menu__phone-icon-small {
+        display: none;
+    }
+}

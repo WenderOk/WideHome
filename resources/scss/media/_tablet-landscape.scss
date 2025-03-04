@@ -1,0 +1,31 @@
+@use "sass:math";
+@media (min-width: 1024px) and (max-width: 1280px) and (orientation: landscape) {
+    html {
+        font-size: calc(1vw / 10.24);
+    }
+    .header {
+        padding: 24rem 30rem ;
+    }
+    .menu__button {
+        display: none;
+    }
+    .menu__phone-icon-small {
+        display: none;
+    }
+    .header__logo {
+        height: 48rem;
+        width: 48rem;
+    }
+    .cover {
+        padding: 140rem 30rem;
+    }
+    .footer__contacts {
+        flex-wrap: wrap;
+        height: 624rem;
+        padding: 200rem 30rem;
+    }
+    .footer__copyrights {
+        padding-left:32rem;
+        padding-right: 32rem;
+    }
+}

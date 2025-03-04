@@ -1,6 +1,4 @@
-@use "sass:math";
 @use "reset";
-@use "mixins";
 @use "variables";
 
 @use "blocks/header";
@@ -10,6 +8,9 @@
 @use "control/button";
 @use "control/link";
 
-html {
-    font-size: math.div(1, 19.2)+vw;
-}
+@use "media/phone-portrait";
+@use "media/phone-landscape";
+@use "media/tablet-portrait";
+@use "media/tablet-landscape";
+@use "media/laptop";
+@use "media/wide";

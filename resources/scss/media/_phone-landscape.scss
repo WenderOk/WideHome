@@ -1,0 +1,49 @@
+@use "sass:math";
+@media (max-width: 1023px) and (orientation: landscape) {
+    html {
+        font-size: calc(1vw / 8);
+    }
+
+    .header {
+        padding: 24rem 30rem;
+    }
+
+    .header__menu {
+        gap: 20rem;
+    }
+
+    .header__menu-element {
+        display: none;
+    }
+
+    .header__logo {
+        height: 48rem;
+        width: 48rem;
+    }
+
+    .cover {
+        padding: 120px 32px;
+    }
+
+    .cover__heading {
+        font-size: 40rem;
+        line-height: 56rem;
+    }
+
+    .contacts {
+        flex-wrap: wrap;
+        padding: 200rem 30rem;
+    }
+
+    .contacts__group {
+        width: 324rem;
+    }
+
+    .footer__copyright {
+        padding: 24rem 32rem;
+    }
+
+    .footer__copyright-text {
+        width: 324rem;
+    }
+}

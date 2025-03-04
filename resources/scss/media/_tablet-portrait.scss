@@ -1,0 +1,54 @@
+@use "sass:math";
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    html {
+        font-size: calc(1vw / 7.68);
+    }
+    .header {
+        padding: 24rem 30rem ;
+    }
+    .header__menu {
+        gap: 20rem;
+    }
+    .menu__element {
+        display: none;
+    }
+    .menu__phone-icon-small {
+        display: none;
+    }
+    .menu__button {
+        display: flex;
+    }
+    .button__p {
+        display: flex;
+        align-items: center;
+    }
+    .header__logo {
+        height: 48rem;
+        width: 48rem;
+    }
+    .cover {
+        padding: 140rem 30rem;
+    }
+    .container__h1 {
+        font-size: 40rem;
+        width: 550rem;
+    }
+    .footer__contacts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        height: 624rem;
+        padding: 200rem 30rem;
+    }
+    .contacts__group1,.contacts__group2 {
+        width: 324rem;
+    }
+    .footer__copyrights {
+        padding:24rem 32rem;
+    }
+    .footer__copyrights__p, .footer__copyrights__p2 {
+        width: 324rem;
+    }
+}
+

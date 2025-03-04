@@ -3,77 +3,6 @@
     flex-direction: column;
     background: var(--color-dark);
 
-
-    .contacts {
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        align-self: stretch;
-        padding: 240rem 320rem;
-        gap: 56rem;
-        border-bottom: 1rem solid var(--color-gray);
-
-        &__group {
-            display: flex;
-            flex-direction: column;
-            gap: 16rem;
-
-            &-heading {
-                font-weight: 100;
-                letter-spacing: 0.08em;
-                color: var(--color-light);
-            }
-        }
-
-        &__content {
-            display: flex;
-            flex-direction: column;
-            gap: 8rem;
-        }
-
-        &__phone {
-            font-weight: 600;
-            font-size: 32rem;
-            line-height: 40rem;
-            color: var(--color-light);
-        }
-
-        &__social {
-            display: flex;
-            gap: 24rem;
-
-
-            &-link {
-                display: flex;
-                font-weight: 600;
-                align-items: center;
-                gap: 8rem;
-                color: var(--color-light);
-            }
-        }
-
-        &__mail-and-time {
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            gap: 8rem;
-        }
-
-        &__mail {
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-            color: var(--color-light);
-            font-weight: 600;
-        }
-
-        &__time {
-            display: flex;
-            font-weight: 300;
-            color: var(--color-light);
-        }
-    }
-
     &__copyright {
         display: flex;
         justify-content: space-between;
@@ -89,6 +18,77 @@
         }
     }
 }
+
+.contacts {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    padding: 240rem 320rem;
+    gap: 56rem;
+    border-bottom: 1rem solid var(--color-gray);
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        gap: 16rem;
+
+        &-heading {
+            font-weight: 100;
+            letter-spacing: 0.08em;
+            color: var(--color-light);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    &__phone {
+        font-weight: 600;
+        font-size: 32rem;
+        line-height: 40rem;
+        color: var(--color-light);
+    }
+
+    &__social {
+        display: flex;
+        gap: 24rem;
+
+
+        &-link {
+            display: flex;
+            font-weight: 600;
+            align-items: center;
+            gap: 8rem;
+            color: var(--color-light);
+        }
+    }
+
+    &__mail-and-time {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 8rem;
+    }
+
+    &__mail {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        color: var(--color-light);
+        font-weight: 600;
+    }
+
+    &__time {
+        display: flex;
+        font-weight: 300;
+        color: var(--color-light);
+    }
+}
+
 
 .contacts__mail:hover {
     color: var(--color-accent);

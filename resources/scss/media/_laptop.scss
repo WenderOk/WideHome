@@ -1,0 +1,25 @@
+@use "sass:math";
+@media (min-width: 1281px) and (max-width: 1599px) {
+    html {
+        font-size: calc(1vw / 13.66);
+    }
+    .header {
+        padding: 24rem 60rem;
+    }
+    .menu__button {
+        display: none;
+    }
+    .menu__phone-icon-small {
+        display: none;
+    }
+    .cover {
+        padding: 140rem 60rem;
+    }
+    .footer__contacts {
+        padding: 240rem 60rem;
+    }
+    .footer__copyrights {
+        padding-left: 60rem;
+        padding-right: 60rem;
+    }
+}
