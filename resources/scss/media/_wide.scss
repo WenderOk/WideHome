@@ -1,12 +1,15 @@
 @use "sass:math";
-@media (min-width: 1024px) {
+@media (min-width: 1600px) {
     html {
-        font-size: calc(1vw / 19.2);
+        font-size: math.div(1, 19.2)+vw;
     }
-    .menu__button {
+    .menu__burger-button {
         display: none;
     }
     .menu__phone-icon-small {
+        display: none;
+    }
+    .menu__phone-icon {
         display: none;
     }
 }

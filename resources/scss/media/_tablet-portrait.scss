@@ -12,13 +12,13 @@
     .menu__element {
         display: none;
     }
-    .menu__phone-icon-small {
+    .menu__phone-icon {
         display: none;
     }
-    .menu__button {
+    .menu__burger-button {
         display: flex;
     }
-    .button__p {
+    .menu__burger-button-text {
         display: flex;
         align-items: center;
     }
@@ -29,7 +29,7 @@
     .cover {
         padding: 140rem 30rem;
     }
-    .container__h1 {
+    .cover__heading {
         font-size: 40rem;
         width: 550rem;
     }

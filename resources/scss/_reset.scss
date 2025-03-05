@@ -15,11 +15,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	outline: 0;
 	font-style: normal;
-    font-size: 16rem;
-    line-height: 24rem;
 	vertical-align: baseline;
 	background: transparent;
     text-decoration: none;
+	box-sizing: border-box;
 }
 body {
     font-family: var(--font-family-base);
@@ -29,6 +28,8 @@ body {
     position: relative;
     background: var(--color-light);
 	color: var(--color-gray);
+	font-size: 16rem;
+    line-height: 24rem;
   }
 ol, ul {
 	list-style: none;

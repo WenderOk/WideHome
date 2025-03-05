@@ -2,31 +2,61 @@
     display: flex;
     justify-content: space-between;
     top: 0;
-    position: sticky; 
+    position: fixed; 
     padding: 24rem 320rem;
     background: var(--color-light);
+    width: 100%;
+    box-sizing: border-box;
 
     &__logo {
         width: 64rem;
         height: 64rem;
     }
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40rem;
 
-    &__menu {
+    &__element {
+        display: flex;
+    }
+
+    &__link {
+        font-weight: 600;
+        color: var(--color-gray);
+    }
+
+    &__burger-button {
+        background-color: var(--color-light);
+        border: 0;
         display: flex;
         align-items: center;
-        gap: 40rem;
+        gap: 7rem;
+        transition: var(--transition-duration) linear;
 
-        &-element {
+        &-text {
             display: flex;
-        }
-
-        &-link {
             font-weight: 600;
             color: var(--color-gray);
+            transition: var(--transition-duration) linear;
         }
+    }
+    &__phone-icon {
+        font-weight: 600;
+        color: var(--color-gray);
     }
 }
 
-.header__menu-link:hover {
+.menu__link:hover {
+    color: var(--color-accent);
+}
+.menu__phone-icon:hover {
+    color: var(--color-accent);
+}
+.menu__burger-button:hover {
+    color: var(--color-accent);
+}
+.menu__burger-button-text:hover {
     color: var(--color-accent);
 }

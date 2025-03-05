@@ -14,25 +14,26 @@
 <body>
   <header class="header">
     <div class="header__logo"><img class="header__logo" src="{{ Vite::asset('resources/images/logo.svg') }}" alt="Агентство 2И" /></div>
-    <nav class="header__menu">
-      <div class="header__menu-element">
-        <a class="header__menu-link" href="/">Услуги</a>
+    <nav class="menu">
+      <div class="menu__element">
+        <a class="menu__link" href="/">Услуги</a>
       </div>
-      <div class="header__menu-element">
-        <a class="header__menu-link" href="/">Портфолио</a>
+      <div class="menu__element">
+        <a class="menu__link" href="/">Портфолио</a>
       </div>
-      <div class="header__menu-element">
-        <a class="header__menu-link" href="#contacts">Контакты</a>
+      <div class="menu__element">
+        <a class="menu__link" href="#contacts">Контакты</a>
       </div>
       <button class="menu__burger-button">
-          <i class="fa-solid fa-bars button__icon">Меню</i>
+          <i class="fa-solid fa-bars button__icon"></i>
+          <p class="menu__burger-button-text">Меню</p>
       </button>
       <a class="button button_transparent" href="tel:+79310093772>">
-        <div><i class="fas fa-mobile-screen-button"></i></div>
+        <i class="fas fa-mobile-screen-button"></i>
         +7 931 009-37-72
       </a>
+      <a class="menu__phone-icon" href="tel:+79310093772"><i class="fas fa-mobile-screen-button"></i></a>
     </nav>
-    <a class="menu__phone-icon-small" href="tel:+7 931 009-37-72"><i class="fa-solid fa-mobile-screen-button"></i></a>
   </header>
 
   <div class="cover">

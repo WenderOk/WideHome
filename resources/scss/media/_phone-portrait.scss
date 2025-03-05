@@ -8,15 +8,27 @@
         padding: 24rem 16rem;
     }
 
-    .header__menu {
+    .menu {
         gap: 20rem;
     }
 
-    .header__menu-element {
+    .menu__element {
+        display: none;
+    }
+
+    .menu__burger-button {
+        display: flex;
+    }
+
+    .menu__burger-button-text {
         display: none;
     }
 
     .button_transparent {
+        display: none;
+    }
+
+    .menu__phone-icon {
         display: flex;
     }
 
