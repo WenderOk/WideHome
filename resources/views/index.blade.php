@@ -24,11 +24,15 @@
       <div class="header__menu-element">
         <a class="header__menu-link" href="#contacts">Контакты</a>
       </div>
+      <button class="menu__burger-button">
+          <i class="fa-solid fa-bars button__icon">Меню</i>
+      </button>
       <a class="button button_transparent" href="tel:+79310093772>">
-        <div class="icon"><i class="fas fa-mobile-screen-button"></i></div>
+        <div><i class="fas fa-mobile-screen-button"></i></div>
         +7 931 009-37-72
       </a>
     </nav>
+    <a class="menu__phone-icon-small" href="tel:+7 931 009-37-72"><i class="fa-solid fa-mobile-screen-button"></i></a>
   </header>
 
   <div class="cover">
