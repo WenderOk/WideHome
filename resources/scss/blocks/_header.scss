@@ -58,6 +58,7 @@
         transition: variables.$transition-duration linear;
 
         &-icon {
+            transition: variables.$transition-duration linear;
             padding: 9rem;
         }
 
