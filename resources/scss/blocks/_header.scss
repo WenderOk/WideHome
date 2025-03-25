@@ -1,62 +1,151 @@
+@use "../adaptive/media";
+@use '../variables';
+
 .header {
     display: flex;
     justify-content: space-between;
     top: 0;
-    position: fixed; 
-    padding: 24rem 320rem;
-    background: var(--color-light);
+    position: fixed;
+    padding: 16rem 320rem;
+    background: variables.$color-light;
     width: 100%;
-    box-sizing: border-box;
 
     &__logo {
         width: 64rem;
         height: 64rem;
-    }
-}
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 40rem;
 
-    &__element {
-        display: flex;
+        @include media.phone-portrait {
+            width: 40rem;
+            height: 40rem;
+        }
+
+        @include media.tablet {
+            width: 48rem;
+            height: 48rem;
+        }
+
+        @include media.phone-landscape {
+            width: 48rem;
+            height: 48rem;
+        }
+
     }
 
-    &__link {
-        font-weight: 600;
-        color: var(--color-gray);
+    @include media.laptop {
+        padding: 8rem 64rem;
+    }
+
+    @include media.tablet {
+        padding: 16rem 32rem;
+    }
+
+    @include media.phone-landscape {
+        padding: 8rem 32rem;
+    }
+
+    @include media.phone-portrait {
+        padding: 8rem 8rem 8rem 16rem;
     }
 
     &__burger-button {
-        background-color: var(--color-light);
-        border: 0;
         display: flex;
         align-items: center;
-        gap: 7rem;
-        transition: var(--transition-duration) linear;
+        font-size: 16rem;
+        padding: 0;
+        font-family: variables.$font-family-base;
+        background-color: variables.$color-light;
+        border: 0;
+        transition: variables.$transition-duration linear;
+
+        &-icon {
+            padding: 9rem;
+        }
+
+        &:hover {
+            color: variables.$color-accent;
+        }
+
+        @include media.desktop {
+            display: none;
+        }
+
+        @include media.mobile {
+            display: flex;
+        }
 
         &-text {
             display: flex;
+            align-items: center;
             font-weight: 600;
-            color: var(--color-gray);
-            transition: var(--transition-duration) linear;
+            color: currentColor;
+            transition: variables.$transition-duration linear;
+
+            @include media.phone-portrait {
+                display: none;
+            }
         }
     }
-    &__phone-icon {
-        font-weight: 600;
-        color: var(--color-gray);
-    }
-}
 
-.menu__link:hover {
-    color: var(--color-accent);
-}
-.menu__phone-icon:hover {
-    color: var(--color-accent);
-}
-.menu__burger-button:hover {
-    color: var(--color-accent);
-}
-.menu__burger-button-text:hover {
-    color: var(--color-accent);
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 40rem;
+
+        @include media.tablet {
+            gap: 24rem;
+        }
+
+        @include media.phone-portrait {
+            gap: 0rem;
+        }
+
+        @include media.phone-landscape {
+            gap: 24rem;
+        }
+
+        &-element {
+            display: flex;
+            gap: 4rem;
+
+            @include media.tablet {
+                display: none;
+            }
+
+            @include media.phone {
+                display: none;
+            }
+        }
+
+        &-link {
+            font-weight: 600;
+            color: variables.$color-gray;
+            ;
+
+            &:hover {
+                color: variables.$color-accent;
+            }
+        }
+
+        &-button {
+            @include media.phone-portrait {
+                display: none;
+            }
+        }
+
+        &-phone-icon {
+            display: none;
+            padding: 8rem 8rem;
+            font-weight: 600;
+            color: variables.$color-gray;
+            ;
+
+            @include media.phone-portrait {
+                display: flex;
+            }
+
+            &:hover {
+                color: variables.$color-accent;
+            }
+        }
+    }
 }

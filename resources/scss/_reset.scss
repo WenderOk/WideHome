@@ -1,67 +1,176 @@
-/* http://meyerweb.com/eric/tools/css/reset/ */
-/* v1.0 | 20080212 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
+html, body,
+div, span,
+object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, var,
+small, strong, sub, sup, b, i,
+dl, dt, dd,
+ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	outline: 0;
-	font-style: normal;
+	font-size: 100%;
+	font-weight: normal;
 	vertical-align: baseline;
 	background: transparent;
-    text-decoration: none;
+}
+
+main, article, aside, figure, footer, header, nav, section, details, summary {
+	display: block;
+}
+
+html {
 	box-sizing: border-box;
 }
-body {
-    font-family: var(--font-family-base);
-    display: flex;
-    flex-direction: column;
-    isolation: isolate;
-    position: relative;
-    background: var(--color-light);
-	color: var(--color-gray);
-	font-size: 16rem;
-    line-height: 24rem;
-  }
-ol, ul {
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
 	content: none;
 }
 
-/* remember to define focus styles! */
-:focus {
-	outline: 0;
-}
-
-/* remember to highlight inserts somehow! */
-ins {
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 	text-decoration: none;
 }
+
 del {
 	text-decoration: line-through;
 }
 
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted #000;
+	cursor: help;
 }
 
-html{
-    scroll-behavior: smooth;
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	text-align: left;
+}
+
+th {
+	vertical-align: bottom;
+}
+
+td {
+	font-weight: normal;
+	vertical-align: top;
+}
+
+td img {
+	vertical-align: top;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #999;
+	margin: 0;
+	padding: 0;
+}
+
+input, select {
+	vertical-align: middle;
+}
+
+pre {
+	white-space: pre-line;
+}
+
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+	vertical-align: bottom;
+}
+
+small {
+	font-size: .8rem;
+}
+
+strong {
+	font-weight: bold;
+}
+
+sub, sup {
+	font-size: .8em;
+	line-height: 0;
+	position: relative;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+pre, code, kbd, samp {
+	font-family: monospace, sans-serif;
+}
+
+label, input[type=button], input[type=submit], input[type=file], button {
+	cursor: pointer;
+}
+
+button, input, select, textarea {
+	margin: 0;
+}
+
+ins {
+	background-color: var(--highlight-color);
+	color: #000;
+	text-decoration: none;
+}
+
+mark {
+	background-color: var(--highlight-color);
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+blockquote {
+	padding: 2rem;
+	border-left: 1px solid #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-wrap: balance
+}
+
+p {
+	text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	:has(:target) {
+		scroll-behavior: smooth;
+	}
 }

@@ -1,16 +1,11 @@
 @use "reset";
 @use "variables";
+@use "control/button";
+@use "control/link";
 
+@use "blocks/body";
 @use "blocks/header";
 @use "blocks/cover";
 @use "blocks/footer";
 
-@use "control/button";
-@use "control/link";
-
-@use "media/phone-portrait";
-@use "media/phone-landscape";
-@use "media/tablet-portrait";
-@use "media/tablet-landscape";
-@use "media/laptop";
-@use "media/wide";
+@use "adaptive/rem";

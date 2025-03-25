@@ -1,14 +1,49 @@
+@use "../variables";
+@use "../adaptive/media";
+
 .cover {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 240rem 320rem;
-    gap: 32rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 240rem 320rem;
+  row-gap: 32rem;
+
+  @include media.laptop {
+    padding: 240rem 64rem;
   }
-  
-  .cover__heading {
-    font-weight: 800;
-    font-size: 64rem;
-    line-height: 80rem;
-    color: var(--color-gray);
+
+  @include media.mobile {
+    row-gap: 24rem;
   }
+
+  @include media.tablet {
+    padding: 200rem 32rem;
+  }
+
+  @include media.phone-portrait {
+    padding: 160rem 16rem;
+  }
+
+  @include media.phone-landscape {
+    padding: 120rem 32rem;
+  }
+
+  &__button {
+    @include media.phone-portrait {
+      width: 100%;
+    }
+  }
+
+}
+
+.cover__heading {
+  font-weight: 800;
+  font-size: 64rem;
+  line-height: 80rem;
+  color: variables.$color-gray;
+
+  @include media.mobile {
+    font-size: 40rem;
+    line-height: 56rem;
+  }
+}

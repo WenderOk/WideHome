@@ -1,11 +1,9 @@
-:root {
-    --color-light: #FFFFFF;
-    --color-dark: #141414;
-    --color-accent: #04f;
-    --color-accent-light: #3369ff;
-    --color-gray: #222;
+$color-light: #FFFFFF;
+$color-dark: #141414;
+$color-accent: #04f;
+$color-accent-light: #3369ff;
+$color-gray: #222;
 
-    --font-family-base: "Geologica", sans-serif;
+$font-family-base: "Geologica", sans-serif;
 
-    --transition-duration: 0.15s;
-}
+$transition-duration: 0.15s;

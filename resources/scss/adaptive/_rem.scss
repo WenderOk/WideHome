@@ -1,0 +1,44 @@
+@use "media";
+@use "sass:math";
+
+html {
+
+    // Настольные //
+    @include media.desktop {
+        font-size: math.div(1, 13.66)+vw;
+    }
+
+    @include media.wide() {
+        font-size: math.div(1, 19.2)+vw;
+    }
+
+    @include media.laptop {
+        font-size: math.div(1, 13.66)+vw;
+    }
+
+    // Планшеты //
+    @include media.tablet-portrait {
+        font-size: math.div(1, 7.68)+vw;
+    }
+
+    @include media.tablet-landscape {
+        font-size: math.div(1, 10.24)+vw;
+    }
+
+    @include media.tablet-portrait {
+        font-size: math.div(1, 7.68)+vw;
+    }
+
+    // Телефоны //
+    @include media.phone {
+        font-size: math.div(1, 8)+vw;
+    }
+
+    @include media.phone-landscape {
+        font-size: math.div(1, 8)+vw;
+    }
+
+    @include media.phone-portrait {
+        font-size: math.div(1, 3.6)+vw;
+    }
+}

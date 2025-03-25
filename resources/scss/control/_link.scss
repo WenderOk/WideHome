@@ -1,3 +1,5 @@
+@use "../variables";
+
 a {
-    transition: var(--transition-duration) linear;
+    transition: variables.$transition-duration linear;
 }

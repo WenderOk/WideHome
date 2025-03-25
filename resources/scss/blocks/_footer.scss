@@ -1,103 +1,142 @@
+@use "../variables";
+@use "../adaptive/media";
+
 .footer {
     display: flex;
     flex-direction: column;
-    background: var(--color-dark);
+    background: variables.$color-dark;
 
     &__copyright {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         padding: 24rem 320rem;
 
+        @include media.laptop {
+            padding: 24rem 64rem;
+        }
+
+        @include media.tablet {
+            padding: 24rem 32rem;
+            gap: 56rem;
+        }
+
+        @include media.phone-landscape {
+            padding: 24rem 32rem;
+            gap: 56rem;
+        }
+
+        @include media.phone-portrait {
+            flex-direction: column;
+            padding: 24rem 16rem;
+            row-gap: 16rem;
+        }
+
         &-text {
-            margin-right: 127rem;
             font-weight: 300;
             font-size: 12rem;
             line-height: 16rem;
-            color: var(--color-light);
+            color: variables.$color-light;
         }
     }
-}
 
-.contacts {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-self: stretch;
-    padding: 240rem 320rem;
-    gap: 56rem;
-    border-bottom: 1rem solid var(--color-gray);
-
-    &__group {
+    &__contacts {
         display: flex;
-        flex-direction: column;
-        gap: 16rem;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 240rem 320rem;
+        gap: 56rem;
+        border-bottom: 1rem solid variables.$color-gray;
+
+        @include media.laptop {
+            padding: 240rem 64rem;
+        }
+
+        @include media.mobile {
+            flex-wrap: wrap;
+            row-gap: 56rem;
+        }
+
+        @include media.tablet {
+            padding: 200rem 32rem;
+        }
+
+        @include media.phone-portrait {
+            padding: 144rem 16rem;
+        }
+
+        @include media.phone-landscape {
+            padding: 120rem 32rem;
+        }
+
+        &-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16rem;
+        }
 
         &-heading {
             font-weight: 100;
             letter-spacing: 0.08em;
-            color: var(--color-light);
+            color: variables.$color-light;
         }
-    }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        gap: 8rem;
-    }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8rem;
+        }
 
-    &__phone {
-        font-weight: 600;
-        font-size: 32rem;
-        line-height: 40rem;
-        color: var(--color-light);
-    }
+        &-phone {
+            font-weight: 600;
+            font-size: 32rem;
+            line-height: 40rem;
+            color: variables.$color-light;
 
-    &__social {
-        display: flex;
-        gap: 24rem;
+            &:hover {
+                color: variables.$color-accent;
+            }
+        }
 
+        &-social {
+            display: flex;
+            gap: 24rem;
+        }
 
         &-link {
             display: flex;
             font-weight: 600;
             align-items: center;
             gap: 8rem;
-            color: var(--color-light);
+            color: variables.$color-light;
+
+            &:hover {
+                color: variables.$color-accent;
+            }
+        }
+
+        &-mail-and-time {
+            display: flex;
+            flex-direction: column;
+            gap: 8rem;
+        }
+
+        &-mail {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            color: variables.$color-light;
+            font-weight: 600;
+
+            &:hover {
+                color: variables.$color-accent;
+            }
+        }
+
+        &-time {
+            display: flex;
+            font-weight: 300;
+            color: variables.$color-light;
         }
     }
-
-    &__mail-and-time {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        gap: 8rem;
-    }
-
-    &__mail {
-        display: flex;
-        align-items: center;
-        gap: 4rem;
-        color: var(--color-light);
-        font-weight: 600;
-    }
-
-    &__time {
-        display: flex;
-        font-weight: 300;
-        color: var(--color-light);
-    }
-}
-
-
-.contacts__mail:hover {
-    color: var(--color-accent);
-}
-
-.contacts__social-link:hover {
-    color: var(--color-accent);
-}
-
-.contacts__phone:hover {
-    color: var(--color-accent);
 }
